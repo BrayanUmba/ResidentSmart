@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentSmart - Selector de Área Común</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/resident-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-auto sidebar">
+                <div class="logo-container d-flex align-items-center p-3">
+                    <img src="img/logo.png" alt="SIACREB" height="40">
+                    <span class="ms-2 fw-bold text-dark">SIACREB</span>
+                </div>
+                <div class="resident-label px-3 py-2">
+                    Residente
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="pago-en-linea.html" class="nav-link">
+                            <i class="bi bi-credit-card"></i> Pago en Línea
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="comunicados.html" class="nav-link">
+                            <i class="bi bi-envelope"></i> Comunicados
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="residente-eventos.html" class="nav-link">
+                            <i class="bi bi-calendar-event"></i> Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="selector-area-comun.html" class="nav-link active">
+                            <i class="bi bi-building-gear"></i> Selector de área común
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-file-earmark-text"></i> Formulario de nueva solicitud/queja
+                        </a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a href="index.html" class="nav-link">
+                            <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col main-content">
+                <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                    <div></div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="container py-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1>Eventos Salon Comunal</h1>
+                        <div class="welcome-message">
+                            Residente
+                        </div>
+                    </div>
+                    
+                    <p class="text-muted mb-4">Detalles importantes recientes</p>
+                    
+                    <h2 class="mb-4">Calendario de disponibilidad</h2>
+                    
+                    <div class="calendar-container">
+                        <div class="selector-container d-flex justify-content-between align-items-center mb-4">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-list-ul me-2"></i>
+                                <span>Selector de área común</span>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="areaDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Salón social
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="areaDropdown">
+                                    <li><a class="dropdown-item" href="#">Salón social</a></li>
+                                    <li><a class="dropdown-item" href="#">Piscina</a></li>
+                                    <li><a class="dropdown-item" href="#">Gimnasio</a></li>
+                                    <li><a class="dropdown-item" href="#">Parque infantil</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="calendar-header d-flex justify-content-between align-items-center mb-3">
+                            <button class="btn btn-outline-secondary"><i class="bi bi-chevron-left"></i></button>
+                            <h3 class="mb-0">Mayo 2025</h3>
+                            <button class="btn btn-outline-secondary"><i class="bi bi-chevron-right"></i></button>
+                        </div>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-bordered calendar-table">
+                                <thead>
+                                    <tr>
+                                        <th>Lun</th>
+                                        <th>Mar</th>
+                                        <th>Mié</th>
+                                        <th>Jue</th>
+                                        <th>Vie</th>
+                                        <th>Sáb</th>
+                                        <th>Dom</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td class="disponible">
+                                            8
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                        <td>10</td>
+                                        <td>11</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td class="disponible">
+                                            15
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                        <td>17</td>
+                                        <td>18</td>
+                                        <td>19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td class="disponible">
+                                            22
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td class="disponible">
+                                            26
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td class="disponible">
+                                            29
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                        <td>30</td>
+                                        <td class="disponible">
+                                            31
+                                            <div class="disponible-tag">Disponible</div>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="text-center py-3 border-top">
+                    <p class="mb-0">© 2024 ResidentSmart. Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/resident.js"></script>
+</body>
+</html>

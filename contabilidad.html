@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentSmart - Gestión Contable</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/admin-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-auto sidebar">
+                <div class="logo-container d-flex align-items-center p-3">
+                    <img src="img/logo.png" alt="SIACREB" height="40">
+                    <span class="ms-2 fw-bold text-dark">SIACREB</span>
+                </div>
+                <div class="admin-label px-3 py-2">
+                    Administrador
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="reportes-financieros.html" class="nav-link">
+                            <i class="bi bi-graph-up-arrow"></i> Pago de Residentes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contabilidad.html" class="nav-link active">
+                            <i class="bi bi-calculator"></i> Contabilidad
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pqrs.html" class="nav-link">
+                            <i class="bi bi-cash-coin"></i> PQRs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="comunicacion-residentes.html" class="nav-link">
+                            <i class="bi bi-people"></i> Comunicación con Residentes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="historial-pagos.html" class="nav-link">
+                            <i class="bi bi-clock-history"></i> Historial de pagos
+                        </a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a href="index.html" class="nav-link">
+                            <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col main-content">
+                <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                    <div></div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="container py-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h1>Gestión Contable</h1>
+                        <div class="role-tabs">
+                            <a href="#" class="btn btn-sm btn-outline-secondary active">Administrador</a>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Libro Mayor</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-journal-text fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Comprobantes Diarios</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-receipt fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Estados Financieros</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-file-earmark-bar-graph fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Ingresos y Egresos</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-cash-stack fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Presupuestos</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-clipboard-data fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card accounting-card h-100">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-3">Cuentas por Cobrar</h5>
+                                    <div class="icon-container mb-3">
+                                        <i class="bi bi-credit-card fs-1 text-primary"></i>
+                                    </div>
+                                    <a href="#" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="text-center py-3 border-top">
+                    <p class="mb-0">© 2024 ResidentSmart. Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

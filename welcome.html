@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentSmart - Bienvenida</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="py-2 border-bottom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="d-flex align-items-center text-decoration-none">
+                <img src="img/logo.png" alt="SIACREB" height="40">
+                <span class="ms-2 fw-bold">SIACREB</span>
+            </a>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="bg-primary-custom py-4">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="text-white">Bienvenido a SmartResident</h1>
+                <p class="text-white">Escoje el rol con el que desea navegar</p>
+            </div>
+            
+            <div class="d-flex justify-content-center">
+                <div class="card role-selection-card">
+                    <div class="card-body">
+                        <div class="role-option" onclick="selectRole('administrador')">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/logo.png" alt="Administrador" class="role-icon">
+                                <div class="ms-3">
+                                    <h4>Administrador</h4>
+                                    <p class="text-muted mb-0">Puede ver todas las opciones de un administrador del conjunto</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        
+                        <div class="role-option" onclick="selectRole('concejo')">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/car-icon.png" alt="Concejo" class="role-icon">
+                                <div class="ms-3">
+                                    <h4>Concejo</h4>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+                        
+                        <div class="role-option" onclick="selectRole('residente')">
+                            <div class="d-flex align-items-center">
+                                <img src="img/resident-icon.png" alt="Residente" class="role-icon">
+                                <div class="ms-3">
+                                    <h4>Residente</h4>
+                                    <p class="text-muted mb-0">Leer comunicados importantes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 ResidentSmart. All Rights Reserved</p>
+            <a href="#" class="btn btn-link" id="volverBtn">
+                <i class="bi bi-arrow-left"></i> Volver
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/welcome.js"></script>
+</body>
+</html>

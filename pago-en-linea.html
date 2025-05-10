@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentSmart - Pago en Línea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/resident-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-auto sidebar">
+                <div class="logo-container d-flex align-items-center p-3">
+                    <img src="img/logo.png" alt="SIACREB" height="40">
+                    <span class="ms-2 fw-bold text-dark">SIACREB</span>
+                </div>
+                <div class="resident-label px-3 py-2">
+                    Residente
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="pago-en-linea.html" class="nav-link active">
+                            <i class="bi bi-credit-card"></i> Pago en Línea
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-envelope"></i> Comunicados
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="residente-eventos.html" class="nav-link">
+                            <i class="bi bi-calendar-event"></i> Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="selector-area-comun.html" class="nav-link">
+                            <i class="bi bi-building-gear"></i> Selector de área común
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-file-earmark-text"></i> Formulario de nueva solicitud/queja
+                        </a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a href="index.html" class="nav-link">
+                            <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col main-content">
+                <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                    <div></div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="container-fluid py-4 payment-bg">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-white mb-5">Paga en línea</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="card payment-card">
+                                <div class="card-body p-4">
+                                    <h2 class="text-center mb-4">Residente Apartamento 201</h2>
+                                    
+                                    <form id="paymentForm">
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 mb-3 mb-md-0">
+                                                <label for="nombre" class="form-label">Nombre</label>
+                                                <input type="text" class="form-control" id="nombre" value="Leidy">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="apellido" class="form-label">Apellido</label>
+                                                <input type="text" class="form-control" id="apellido" value="Rodríguez">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="correo" class="form-label">Correo</label>
+                                            <input type="email" class="form-control" id="correo" value="rodriguez@gmail.com">
+                                        </div>
+                                        
+                                        <div class="row mb-3">
+                                            <div class="col-md-6 mb-3 mb-md-0">
+                                                <label for="numeroCuenta" class="form-label">Número Cuenta</label>
+                                                <input type="text" class="form-control" id="numeroCuenta" placeholder="4444-4444-4444-444">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="token" class="form-label">Token</label>
+                                                <input type="text" class="form-control" id="token" placeholder="666-666">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <label for="valorPagar" class="form-label">Valor a Pagar</label>
+                                            <input type="text" class="form-control" id="valorPagar" value="$600.000">
+                                        </div>
+                                        
+                                        <div class="mb-4 form-check">
+                                            <input type="checkbox" class="form-check-input" id="terminos">
+                                            <label class="form-check-label" for="terminos">Aceptar Términos y condiciones</label>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-dark px-4">Pagar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="text-center py-3 border-top">
+                    <p class="mb-0">© 2025 ResidentSmart. All Rights Reserved</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/resident.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentForm = document.getElementById('paymentForm');
+            
+            if (paymentForm) {
+                paymentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const terminos = document.getElementById('terminos').checked;
+                    
+                    if (!terminos) {
+                        alert('Debes aceptar los términos y condiciones para continuar.');
+                        return;
+                    }
+                    
+                    // Simulación de procesamiento de pago
+                    alert('Pago procesado correctamente. Gracias por tu pago.');
+                    
+                    // Redirección a la página de eventos después del pago
+                    setTimeout(function() {
+                        window.location.href = 'residente-eventos.html';
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

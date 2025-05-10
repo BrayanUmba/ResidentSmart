@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResidentSmart - Panel de Control</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/admin-styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Sidebar -->
+            <div class="col-auto sidebar">
+                <div class="logo-container d-flex align-items-center p-3">
+                    <img src="img/logo.png" alt="SIACREB" height="40">
+                    <span class="ms-2 fw-bold text-dark">SIACREB</span>
+                </div>
+                <div class="admin-label px-3 py-2">
+                    Administrador
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="reportes-financieros.html" class="nav-link active">
+                            <i class="bi bi-graph-up-arrow"></i> Reportes financieros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contabilidad.html" class="nav-link">
+                            <i class="bi bi-calculator"></i> Contabilidad
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pqrs.html" class="nav-link">
+                            <i class="bi bi-cash-coin"></i> PQRs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="comunicacion-residentes.html" class="nav-link">
+                            <i class="bi bi-people"></i> Comunicación con Residentes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="historial-pagos.html" class="nav-link">
+                            <i class="bi bi-clock-history"></i> Historial de pagos
+                        </a>
+                    </li>
+                    <li class="nav-item mt-5">
+                        <a href="index.html" class="nav-link">
+                            <i class="bi bi-box-arrow-left"></i> Cerrar sesión
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Main Content -->
+            <div class="col main-content">
+                <header class="d-flex justify-content-between align-items-center p-3 border-bottom">
+                    <div></div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="container py-4">
+                    <h1 class="mb-4">Panel de Control</h1>
+                    <p class="mb-5">Bienvenido a ResidentSmart</p>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <div class="card notification-card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notification-icon bg-warning">
+                                            <i class="bi bi-bell"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h5>Incidencias recientes</h5>
+                                            <p class="text-muted mb-0">Revisar y resolver</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card notification-card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notification-icon bg-info">
+                                            <i class="bi bi-credit-card"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h5>Pagos pendientes</h5>
+                                            <p class="text-muted mb-0">Realizar pagos pendientes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="card notification-card mb-4">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center">
+                                        <div class="notification-icon bg-primary">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                        <div class="ms-3">
+                                            <h5>Mensajes urgentes</h5>
+                                            <p class="text-muted mb-0">Leer comunicados importantes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h2>Notificaciones</h2>
+                            <p class="text-muted">Manténgase al tanto de lo importante</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row mb-5">
+                        <div class="col-md-6">
+                            <h2>PQRs</h2>
+                            <p class="text-muted mb-4">Detalles importantes recientes</p>
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="pqr-icon me-3">
+                                            <i class="bi bi-exclamation-triangle fs-1 text-warning"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Incidencia 123</h5>
+                                            <p class="mb-0">Descripción breve de la incidencia y acciones requeridas</p>
+                                            <span class="badge bg-warning">Urgente</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="pqr-icon me-3">
+                                            <i class="bi bi-credit-card fs-1 text-danger"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Pago Pendiente</h5>
+                                            <p class="mb-0">Monto y fecha límite para el pago</p>
+                                            <span class="badge bg-danger">Urgente</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="pqr-icon me-3">
+                                            <i class="bi bi-envelope fs-1 text-secondary"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Comunicado Especial</h5>
+                                            <p class="mb-0">Información relevante para residentes</p>
+                                            <span class="badge bg-secondary">Administración</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <h2>Responder a Notificación</h2>
+                            <p class="text-muted mb-4">Tomar acciones sobre notificaciones</p>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="comentario" class="form-label">Comentario</label>
+                                            <textarea class="form-control" id="comentario" rows="5" placeholder="Escriba su respuesta aquí"></textarea>
+                                        </div>
+                                        <div class="text-end">
+                                            <button type="submit" class="btn btn-dark">Enviar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <footer class="text-center py-3 border-top">
+                    <p class="mb-0">© 2024 ResidentSmart. Todos los derechos reservados.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
