@@ -1,1 +1,2 @@
 # ResidentSmart
+## Getting Started
